@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+header {
+  background: linear-gradient(90deg, #ff6f61, #ffb347);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+header p {
+  font-style: italic;
+}
+.products {
+  padding: 40px;
+  text-align: center;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  width: 200px;
+}
+.product-card:hover {
+  transform: scale(1.05);
+}
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.offers {
+  background: #ffe6e6;
+  padding: 40px;
+  text-align: center;
+}
+.offers table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+.offers th, .offers td {
+  border: 2px solid #ff6f61;
+  padding: 10px;
+}
+.offers th {
+  background: #ff6f61;
+  color: white;
+}
+.benefits {
+  padding: 40px;
+  background: #fff3e0;
+}
+.benefits ul {
+  list-style: none;
+  padding: 0;
+}
+.benefits li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌟 Fashion Store 🌟</h1>
+    <p>Your Style, Our Passion</p>
+  </header>
+  <section class="products">
+    <h2>Our Fashion Collection</h2>
+    <div class="product-container">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x250" alt="Dress">
+        <h3>Summer Dress</h3>
+        <p>$49.99</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x250" alt="Jacket">
+        <h3>Leather Jacket</h3>
+        <p>$99.99</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x250" alt="Shoes">
+        <h3>Sport Shoes</h3>
+        <p>$59.99</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x250" alt="Bag">
+        <h3>Handbag</h3>
+        <p>$39.99</p>
+      </div>
+    </div>
+  </section>
+  <section class="offers">
+    <h2>🔥 Upcoming Sale Offers 🔥</h2>
+    <table>
+      <tr>
+        <th>Sale Event</th>
+        <th>Discount</th>
+        <th>Date</th>
+      </tr>
+      <tr>
+        <td>Summer Bonanza</td>
+        <td>Up to 40% Off</td>
+        <td>July 10 - July 20</td>
+      </tr>
+      <tr>
+        <td>Back to School</td>
+        <td>30% Off Shoes</td>
+        <td>August 5 - August 15</td>
+      </tr>
+      <tr>
+        <td>Festive Season</td>
+        <td>Buy 1 Get 1 Free</td>
+        <td>December 1 - December 25</td>
+      </tr>
+    </table>
+  </section>
+  <section class="benefits">
+    <h2>Why Shop With Us?</h2>
+    <ul>
+      <li>✔ Trendy & high-quality fashion collections</li>
+      <li>✔ Affordable prices with frequent discounts</li>
+      <li>✔ Fast & reliable delivery</li>
+      <li>✔ 24/7 Customer Support</li>
+    </ul>
+  </section>
+  <footer>
+    <p>© 2025 Fashion Store. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
