@@ -1,0 +1,37 @@
+
+CREATE DATABASE fashion_store;
+USE fashion_store;
+
+CREATE TABLE products (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  price DECIMAL(10,2) NOT NULL,
+  bought INT DEFAULT 0,
+  sold INT DEFAULT 0
+);
+
+INSERT INTO products (name, price, bought, sold) VALUES
+('Ribbed Knit Dress', 34.99, 50, 12),
+('Classic Denim Jacket', 59.50, 40, 10),
+('Leather Ankle Boots', 89.90, 30, 8),
+('Silk Scarf', 19.00, 80, 22),
+('Slim Fit Jeans', 49.00, 60, 18);
+
+
+CREATE VIEW inventory_summary AS
+SELECT 
+  id,
+  name,
+  bought,
+  sold,
+  (bought - sold) AS in_stock,
+  (sold * price) AS revenue
+FROM products;
+
+
+SELECT 
+  SUM(bought) AS total_bought,
+  SUM(sold) AS total_sold,
+  SUM(bought - sold) AS total_in_stock,
+  SUM(sold * price) AS total_revenue
+FROM products;
